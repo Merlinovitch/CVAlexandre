@@ -3,8 +3,7 @@
         width: 55%;
         margin-left: auto;
         margin-right: auto;
-        border-left: 1px solid #ADC0B6;
-        border-right: 1px solid #ADC0B6;
+
     }
 
     .menu {
@@ -29,6 +28,10 @@
         display: none;
     }
 
+    .navbar {
+        display: none;
+}
+
     .header-container {
         height: 60vh;
         flex-wrap: wrap;
@@ -41,8 +44,8 @@
 }
 
 body {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5746673669467788) 0%, rgba(0, 0, 0, 0.8071603641456583) 100%);
+    background: #F8F9F9;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .profil {
@@ -53,43 +56,56 @@ body {
 
 .content {
     font-size: small;
-    font-family: Roboto, Helvetica, sans-serif;
+
 }
 
+
 .navbar {
-    font-family: Roboto, Helvetica, sans-serif;
+ 
     font-size: small;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1vw;
-    margin-top: 1vh;
     margin-bottom: 1vh;
     height: fit-content;
-    background-color: #DAD9D7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(217, 217, 217, 0.9); 
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.acceuil {
+	margin-left: 2vw;
+	font-size: 1.45em;
+    font-family: rubik;
+    text-transform: uppercase;
 }
 
 .navbar a {
-    color: #878787;
+    color: #212F3D;
     text-decoration: none;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
-
+    padding: 1vw;
 }
 
 .navbar a:hover {
-    background-color: black;
-    color: #DAD9D7;
-    transition: 1s;
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    color: #ABB2B9;
+    transition: 0.5s;
 }
 
-.footer {
-    background-color: #DAD9D7;
-    width: 100%;
-    height: fit-content;
-    padding-top: 5px;
-    margin-top: 5px;
+.main-nav li {
+    list-style: none;
+
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+
+
 }
 
 h3 {
@@ -113,15 +129,24 @@ h3 {
     margin-top: auto;
     margin-bottom: auto;
     font-size: 2.5em;
+    text-transform: uppercase;
 }
 
+.nom i:hover {
+color: white !important;
+transition: 0.5s;
+}
+
+
 .nom p {
-    font-size: 1em;
+    font-size: medium;
+    text-transform: none;
+
 }
 
 .titre {
-    padding-top: 3vh;
-    margin-bottom: 4vh;
+    padding-top: 5vh;
+    margin-bottom: 5vh;
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -129,8 +154,8 @@ h3 {
 }
 
 .titre2 {
-    margin-top: 3vh;
-    margin-bottom: 4vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 6fr 1fr;
     align-items: center;
@@ -171,20 +196,39 @@ h3 {
     text-transform: uppercase;
 }
 
-.cercles {
+.comp {
     width: 15vh;
     height: 15vh;
     border-radius: 10%;
-    border: 1px solid black;
-    border-color: black;
-    background-color: #878787;
+    background: rgb(205,205,205);
+    background: linear-gradient(197deg, rgba(205,205,205,0.9) 0%, rgba(179,179,179,0.9) 100%);
+    -webkit-box-shadow: 0px 4px 14px -3px rgba(0,0,0,0.32); 
+    box-shadow: 0px 4px 14px -3px rgba(0,0,0,0.32);
+    align-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.container-competence .cercles img {
+.comp p {
+    font-family: rubik;
+    color: white;
+    margin-top: 3vh;
+}
+
+.comp i {
+    margin-top: 3vh;
+}
+
+.comp:hover {
+    background: rgb(142,142,142);
+    background: linear-gradient(197deg, rgba(142,142,142,1) 0%, rgba(73,73,73,0.958420868347339) 100%);
+}
+
+.container-competence .comp img {
     max-width: 7vh;
 }
 
-.container-competence .cercles {
+.container-competence .comp {
     display: grid;
     grid-columns: 1;
     grid-row: 2;
@@ -227,7 +271,24 @@ h3 {
 }
 
 .largeur {
-    background-color: white;
+
     padding-left: 5vw;
     padding-right: 5vw;
 }
+
+.contact {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-color: #ABB2B9;
+
+}
+
+.contact form {
+    margin-left: 3vw;
+    margin-right: 3vw;  
+    display: flex;
+    flex-direction: column;
+
+}
+
+

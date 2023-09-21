@@ -6,10 +6,6 @@
 
     }
 
-    .menu {
-        display: none;
-    }
-
     .header-container {
         height: 80vh;
     }
@@ -30,7 +26,7 @@
     }
 
     .navbar {
-        display: none;
+        display: none !important;
 }
     .header-container {
         height: 60vh;
@@ -41,7 +37,18 @@
         max-width: 60%;
         object-fit: contain;
     }
+
+    .timeline {
+        width: 90%;
+        grid-template-columns: 1fr 5fr !important;
+    }
+    
+    .content {
+        width: 100%;
+    }
 }
+
+
 
 body {
     background: #F8F9F9;

@@ -42,10 +42,6 @@
         width: 90%;
         grid-template-columns: 1fr 5fr !important;
     }
-    
-    .content {
-        width: 100%;
-    }
 }
 
 
@@ -267,7 +263,7 @@ transition: 0.5s;
 .timeline {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2vh;
@@ -283,13 +279,15 @@ padding-left: 0.4vw;
 }
 
 .timeline .timeline-droite {
-    padding-left: 1vw;
+    padding-left: 3vw;
     border-left: 1px dotted black;
 }
 
 .timeline img {
     
     position: absolute;
+    width: fit-content;
+
 }
 
 .largeur {

@@ -15,7 +15,7 @@
     }
 
     .header-container img {
-        height: 80vh;
+       
         max-width: 60%;
         object-fit: contain;
     }
@@ -24,6 +24,7 @@
 
 
 @media (max-width: 700px) {
+
     .navbar a {
         display: none;
     }
@@ -31,7 +32,6 @@
     .navbar {
         display: none;
 }
-
     .header-container {
         height: 60vh;
         flex-wrap: wrap;
@@ -75,6 +75,7 @@ body {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 3;
 
 }
 
@@ -114,7 +115,8 @@ h3 {
 }
 
 .header-container {
-    background-color: #D4C6BB;
+    background: rgb(89,195,182);
+    background: linear-gradient(197deg, rgba(89,195,182,0.1881127450980392) 0%, rgba(117,211,226,0.13209033613445376) 100%);
     width: 100%;
     display: flex;
     font-family: Rubik, Helvetica, sans-serif;
@@ -137,6 +139,9 @@ color: white !important;
 transition: 0.5s;
 }
 
+#git {
+    margin-right: 1vw;
+}
 
 .nom p {
     font-size: medium;
@@ -261,13 +266,23 @@ transition: 0.5s;
     margin-bottom: 2vh;
 }
 
+.annee {
+    color: white;
+    position: relative;
+    z-index: 1;
+margin: 1%;
+padding-left: 0.4vw;
+    font-weight: 600;
+}
+
 .timeline .timeline-droite {
     padding-left: 1vw;
     border-left: 1px dotted black;
 }
 
 .timeline img {
-    margin-right: 2vw;
+    
+    position: absolute;
 }
 
 .largeur {
@@ -276,19 +291,63 @@ transition: 0.5s;
     padding-right: 5vw;
 }
 
-.contact {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    background-color: #ABB2B9;
+
+input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    font-size: x-small;
+  }
+  label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    font-size: x-small;
 
 }
+  
+  input[type=submit] {
+    background-color: #1255a2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: x-small;
+ }
+  
+  input[type=submit]:hover {
+    background-color: #1872D9;
+  }
+  
+  .formulaire {
 
-.contact form {
-    margin-left: 3vw;
-    margin-right: 3vw;  
-    display: flex;
-    flex-direction: column;
+    box-sizing : border-box;
+    border-radius:5px;
+    background-color:#f2f2f2;
+    padding:20px;
+    width: 100%;
+    max-width: 440px;
+    margin:0 auto;
 
-}
+  }
 
+  #contact{
+    text-align: center;
+    font-family: Rubik, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+  }
 
+  .footer {
+    margin-top: 10vh;
+    background: rgb(142,142,142);
+    background: linear-gradient(197deg, rgba(142,142,142,0.21612394957983194) 0%, rgba(73,73,73,0.11808473389355745) 100%);
+    padding: 2vh;
+  }

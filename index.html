@@ -1,170 +1,209 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alexandre Merlin | Développeur Front end</title>
-        <link href="style.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/adb1978e16.js" crossorigin="anonymous"></script>
-    </head>
 
-    <body>
-        <!--navbar-->
-        <div class="navbar">
-            <h1 class="acceuil">
-                <a href="#" class="acceuil">
-                    Alexandre Merlin
-                </a>
-            </h1>
-            <ul class="main-nav">
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Formation</a></li>
-                <li><a href="#">Expériences</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#" style="margin-right: 5vw;">Contact</a></li>
-            </ul>
-        </div>
-        <div class="menu"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandre Merlin | Développeur</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/adb1978e16.js" crossorigin="anonymous"></script>
+</head>
 
-        <!--header-->
-        <div class="header-container">
-            <div class="nom">
+<body>
+    <!--navbar-->
+    <div class="navbar">
+        <h1 class="acceuil">
+            <a href="#" class="acceuil">
                 Alexandre Merlin
-                <p>Développeur Full-Stack</p>
-                <a href="https://github.com/Merlinovitch" target="_blank"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
-                <a href="https://fr.linkedin.com/in/alexandre-merlin-82a395a8" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077b3;"></i></a>
-            </div>
+            </a>
+        </h1>
+        <ul class="main-nav">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#portfolio" style="display: none;">Portfolio</a></li>
+            <li><a href="#contact" style="margin-right: 5vw;">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></div>
 
-            <img src="ressources\photo.webp" alt="Alexandre Merlin" class="photo" />
+    <!--header-->
+    <div class="header-container">
+        <div class="nom">
+           Alexandre Merlin
+            <p>Développeur Full-Stack</p>
+            <a href="https://github.com/Merlinovitch" target="_blank" id="git"><i class="fa-brands fa-github"
+                    style="color: #000000;"></i></a>
+            <a href="https://fr.linkedin.com/in/alexandre-merlin-82a395a8" target="_blank" id="linkedin"><i
+                    class="fa-brands fa-linkedin" style="color: #0077b3;"></i></a>
         </div>
 
-        <!--Profil-->
-        <div class="largeur">
-            <div class="titre">
-                <h3 class="titregauche" id="profil">Profil</h3>
-                <div class="bordergauche"></div>
-            </div>
-            <div class="content">
-                <p class="profil">
-                    Bonjour, je suis Alexandre Merlin, âgé de 30 ans, en reconversion professionnelle pour devenir développeur full stack. Avec une solide expérience en tant que graphiste, j'ai développé une sensibilité esthétique qui se
-                    traduit dans la conception d'interfaces utilisateur agréables. Mon parcours en tant que Customer Success Manager m'a quant à lui enseigné l'importance d'une bonne expérience utilisateur. À présent, je suis déterminé à
-                    maîtriser les langages HTML, CSS et Javascript et les frameworks comme React, node ou Tailwind pour créer des applications web innovantes. Mon objectif est de contribuer au succès de votre équipe en apportant une
-                    perspective unique et polyvalente. Je suis ouvert aux opportunités de collaboration et impatient de mettre en pratique mes compétences.
-                </p>
-            </div>
+        <img src="ressources\Alexandre Merlin.png" alt="Alexandre Merlin" class="photo" />
+    </div>
 
-            <!--Compétences-->
-
-            <div class="titre2">
-                <div class="borderdroite"></div>
-                <h3 class="titredroite" id="competences">Compétences</h3>
-            </div>
-            <div class="container-competence">
-                <div class="comp">
-                    <i class="fa-solid fa-code fa-2xl" style="color: #ffffff;"></i>
-                    <p>HTML / CSS</p>
-                </div>
-                <div class="comp">
-                    <i class="fa-solid fa-paintbrush fa-2xl" style="color: #ffffff;"></i>
-                    <p>Design</p>
-                </div>
-                <div class="comp">
-                    <i class="fa-solid fa-window-restore fa-2xl" style="color: #ffffff;"></i>
-                    <p>UX</p>
-                </div>
-                <div class="comp">
-                    <i class="fa-brands fa-square-js fa-2xl" style="color: #ffffff;"></i>
-                    <p>Javascript</p>
-                </div>
-            </div>
-            <!--formation-->
-
-            <div class="titre">
-                <h3 class="titregauche" id="formation">Formation</h3>
-                <div class="bordergauche"></div>
-            </div>
-
-            <div class="content">
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite"><b>Simplon :</b> <i>Développeur Front-end</i></div>
-                </div>
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite">
-                        <b>Cesacom :</b> Titre certifié RNCP 7 -
-                        <i>
-                            <br />
-                            Manager de projets innovants
-                        </i>
-                    </div>
-                </div>
-            </div>
-
-            <!--Expériences-->
-
-            <div class="titre2">
-                <div class="borderdroite"></div>
-                <h3 class="titredroite" id="experiences">Expériences</h3>
-            </div>
-
-            <div class="content">
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite">
-                        <b>Data Legal Drive :</b> <i>Customer Success Manager</i> <br />
-                        En charge du support client : Onboarding, gestion du chat support, Déclaration des bugs.
-                    </div>
-                </div>
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite">
-                        <b>Geninc :</b> <i>Chargé de communication</i> <br />
-                        Gestion des réseaux sociaux, créations de vidéos promotionnelles, création des supports de ventes.
-                    </div>
-                </div>
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite">
-                        <b>JBL Com & Cie :</b> <i>Graphiste</i> <br />
-                        Création de logos, plaquettes, commerciales, sites vitrines etc.
-                    </div>
-                </div>
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite">
-                        <b>M6 Web :</b> <i>Chef de projets Jeux concours</i> <br />
-                        Création des jeux concours, partenariats avec les entreprises, reportings
-                    </div>
-                </div>
-                <div class="timeline">
-                    <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
-
-                    <div class="timeline-droite">
-                        <b>Réseau Entreprendre Nord :</b> <i>Chargé de communication</i> <br />
-                        Animation des réseaux sociaux, Newsletter et projets de création d'évènements.
-                    </div>
-                </div>
-            </div>
-
-            <!--portfolio-->
-
-            <div class="titre">
-                <h3 class="titregauche" id="portfolio">Portfolio</h3>
-                <div class="bordergauche"></div>
-            </div>
-       
+    <!--Profil-->
+    <div class="largeur">
+        <div class="titre">
+            <h3 class="titregauche" id="profil">Profil</h3>
+            <div class="bordergauche"></div>
         </div>
-    </body>
+        <div class="content">
+            <p class="profil">
+                Bonjour, je suis Alexandre Merlin, âgé de 30 ans, en reconversion professionnelle pour devenir
+                développeur full stack.
+                <br>Avec une solide expérience en tant que graphiste, j'ai développé une sensibilité esthétique qui se
+                traduit dans la conception d'interfaces utilisateur agréables.
+                <br> Mon parcours en tant que Customer Success Manager m'a quant à lui enseigné l'importance d'une bonne
+                expérience utilisateur. À présent, je suis déterminé à
+                maîtriser les langages HTML, CSS et Javascript et les frameworks comme React, node ou Tailwind pour
+                créer des applications web innovantes. Mon objectif est de contribuer au succès de votre équipe en
+                apportant une
+                perspective unique et polyvalente.
+                <br>Je suis ouvert aux opportunités de collaboration et impatient de mettre en pratique mes compétences.
+            </p>
+        </div>
+
+        <!--Compétences-->
+
+        <div class="titre2">
+            <div class="borderdroite"></div>
+            <h3 class="titredroite" id="competences">Compétences</h3>
+        </div>
+        <div class="container-competence">
+            <div class="comp">
+                <i class="fa-solid fa-code fa-2xl" style="color: #ffffff;"></i>
+                <p>HTML / CSS</p>
+            </div>
+            <div class="comp">
+                <i class="fa-solid fa-paintbrush fa-2xl" style="color: #ffffff;"></i>
+                <p>Design</p>
+            </div>
+            <div class="comp">
+                <i class="fa-solid fa-window-restore fa-2xl" style="color: #ffffff;"></i>
+                <p>UX</p>
+            </div>
+            <div class="comp">
+                <i class="fa-brands fa-square-js fa-2xl" style="color: #ffffff;"></i>
+                <p>Javascript</p>
+            </div>
+        </div>
+        <!--formation-->
+
+        <div class="titre">
+            <h3 class="titregauche" id="formation">Formation</h3>
+            <div class="bordergauche"></div>
+        </div>
+
+        <div class="content">
+            <div class="timeline">
+                <div class="annee">2023</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+
+                <div class="timeline-droite"><b>Simplon :</b> <i>Développeur Front-end</i></div>
+            </div>
+            <div class="timeline">
+                <div class="annee">2018</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+                <div class="timeline-droite">
+                    <b>Cesacom :</b> Titre certifié RNCP 7 -
+                    <i>
+                        <br />
+                        Manager de projets innovants
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <!--Expériences-->
+
+        <div class="titre2">
+            <div class="borderdroite"></div>
+            <h3 class="titredroite" id="experiences">Expériences</h3>
+        </div>
+
+        <div class="content">
+            <div class="timeline">
+                <div class="annee">2023</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+                <div class="timeline-droite">
+                    <b>Data Legal Drive :</b> <i>Customer Success Manager</i> <br />
+                    En charge du support client : Onboarding, gestion du chat support, Déclaration des bugs.
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="annee">2019</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+                <div class="timeline-droite">
+                    <b>Geninc :</b> <i>Chargé de communication</i> <br />
+                    Gestion des réseaux sociaux, créations de vidéos promotionnelles, création des supports de ventes.
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="annee">2018</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+                <div class="timeline-droite">
+                    <b>JBL Com & Cie :</b> <i>Graphiste</i> <br />
+                    Création de logos, plaquettes, commerciales, sites vitrines etc.
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="annee">2017</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+                <div class="timeline-droite">
+                    <b>M6 Web :</b> <i>Chef de projets Jeux concours</i> <br />
+                    Création des jeux concours, partenariats avec les entreprises, reportings
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="annee">2016</div>
+                <img src="ressources\fleche.webp" width="50" height="20" viewBox="0 0 50 20" fill="none" alt="fleche" />
+
+                <div class="timeline-droite">
+                    <b>Réseau Entreprendre Nord :</b> <i>Chargé de communication</i> <br />
+                    Animation des réseaux sociaux, Newsletter et projets de création d'évènements.
+                </div>
+            </div>
+        </div>
+
+        <!--portfolio-->
+
+        <div class="titre" style="display: none;">
+            <h3 class="titregauche" id="portfolio">Portfolio</h3>
+            <div class="bordergauche"></div>
+        </div>
+        </div>
+        <div class="footer">
+            <div id="contact">Contact</div>
+            <div class="formulaire">
+                <form action="mailto:a.merlin92@gmail.com" method="get" name="contact">
+                    <label for="fname">Nom Prénom</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+                    <label for="sujet">Objet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+                    <label for="emailAddress">Email</label>
+                    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Votre message" style="height:10vh"></textarea>
+
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+</body>
+
 </html>

@@ -38,9 +38,12 @@
         object-fit: contain;
     }
 
-    .timeline {
-        width: 90%;
-        grid-template-columns: 1fr 5fr !important;
+    .timeline img {
+       display: none;
+    }
+
+    .annee {
+        color: black !important;
     }
 }
 
@@ -286,7 +289,7 @@ padding-left: 0.4vw;
 .timeline img {
     
     position: absolute;
-    width: fit-content;
+    width: 50px;
 
 }
 
